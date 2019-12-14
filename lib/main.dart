@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Twillo'),
+          title: Text('Tweeb'),
           centerTitle: true,
           backgroundColor: Colors.black87,
         ),
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
               ),
               CircleAvatar(
                 radius: 60,
-                backgroundColor: Colors.black,
+                backgroundImage: AssetImage('images/cynthia.jpg'),
               ),
               SizedBox(
                 height: 35.0,
@@ -87,7 +87,9 @@ class MyApp extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                 ),
               ),
-              SizedBox(height: 50,),
+              SizedBox(
+                height: 50,
+              ),
               SizedBox(
                 width: 400,
                 height: 30.0,
@@ -98,7 +100,9 @@ class MyApp extends StatelessWidget {
               Align(
                 alignment: Alignment.topLeft,
                 child: Container(
-                  padding: EdgeInsets.only(left:30, ),
+                  padding: EdgeInsets.only(
+                    left: 30,
+                  ),
                   child: Text(
                     'JOIN',
                     textAlign: TextAlign.left,
@@ -110,18 +114,25 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 30, top: 10,),
+                padding: EdgeInsets.only(
+                  left: 30,
+                  top: 10,
+                ),
                 child: Row(
                   children: <Widget>[
                     Stack(
                       children: <Widget>[
                         CircleAvatar(
                           radius: 28,
+                          backgroundImage: AssetImage('images/eniola.jpg')
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 45, top: 5,),
-                          width: 15,
-                          height: 15,
+                          margin: EdgeInsets.only(
+                            left: 45,
+                            top: 5,
+                          ),
+                          width: 12,
+                          height: 12,
                           //color: Colors.redAccent[400],
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
@@ -131,36 +142,44 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                     Container(
-                      padding: EdgeInsets.only(left:30, top:0, right:70, bottom: 0),
-                      child: Text('Ezichi Czech', 
-                      style: TextStyle( fontSize: 18,
-                      fontWeight: FontWeight.bold)),
+                      padding: EdgeInsets.only(
+                          left: 30, top: 0, right: 70, bottom: 0),
+                      child: Text('Sean Kingston',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold)),
                     ),
                     Container(
-                      child: OutlineButton(
-                        child: Text('Join'),
-                        onPressed: (){},
-                        borderSide: BorderSide(color: Colors.redAccent[400]),
+                        child: OutlineButton(
+                      child: Text('Join'),
+                      onPressed: () {},
+                      borderSide: BorderSide(color: Colors.redAccent[400]),
                       shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25),
-                      ),)
-                    )
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                    ))
                   ],
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 30, top: 10,),
+                padding: EdgeInsets.only(
+                  left: 30,
+                  top: 20,
+                ),
                 child: Row(
                   children: <Widget>[
                     Stack(
                       children: <Widget>[
                         CircleAvatar(
                           radius: 28,
+                          backgroundImage: AssetImage('images/bestie.jpg')
                         ),
                         Container(
-                          margin: EdgeInsets.only(left: 45, top: 5,),
-                          width: 15,
-                          height: 15,
+                          margin: EdgeInsets.only(
+                            left: 45,
+                            top: 5,
+                          ),
+                          width: 12,
+                          height: 12,
                           //color: Colors.redAccent[400],
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
@@ -170,20 +189,21 @@ class MyApp extends StatelessWidget {
                       ],
                     ),
                     Container(
-                      padding: EdgeInsets.only(left:30, top:0, right:70, bottom: 0),
-                      child: Text('Bestie Claire', 
-                      style: TextStyle( fontSize: 18,
-                      fontWeight: FontWeight.bold)),
+                      padding: EdgeInsets.only(
+                          left: 30, top: 0, right: 85, bottom: 0),
+                      child: Text('Bestie Claire',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold)),
                     ),
                     Container(
-                      child: OutlineButton(
-                        child: Text('Join'),
-                        onPressed: (){},
-                        borderSide: BorderSide(color: Colors.redAccent[400]),
+                        child: OutlineButton(
+                      child: Text('Join'),
+                      onPressed: () {},
+                      borderSide: BorderSide(color: Colors.redAccent[400]),
                       shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(25),
-                      ),)
-                    )
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                    ))
                   ],
                 ),
               )
